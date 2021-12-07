@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=
+    , initial-scale=1.0"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Cosas por aprender</h1>
+		<table>
+			<tr>
+				<th>Item</th>
+			</tr>
+			{%for task in tasks %}
+			<tr>
+				<td>{{task.title}}</td>
+			</tr>
+			{% empty %}
+			<h3>No hay tareas por mostrar</h3>
+			{% endfor %}
+		</table>
+	</body>
+</html>
